@@ -1,0 +1,16 @@
+$(function(){
+    $.ajax({
+        type:'get',
+        url:'header.html',
+        success:function(res){
+            $('header').append(res)
+        }
+    })
+    $.ajax({
+        type:'get',
+        url:'footer.html',
+        success:function(res){
+            $('footer').append(res)
+        }
+    })
+})

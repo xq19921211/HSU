@@ -1,0 +1,81 @@
+#header{height:40px}
+#header>div{line-height: 40px}
+#nav{
+    height:70px;
+    position: relative
+}
+#nav>div{line-height: 70px}
+#nav>div a{
+    text-decoration: none
+}
+#nav>div a:hover{
+    color:#0042fb !important;
+}
+#nav>div:first-child>img{width:35%}
+#nav .logo{
+    float: left;}
+#nav .logo img{
+    width: 140px;}
+#nav .nav{
+    float: right;}
+.h-l li a{text-decoration: none}
+.h-l li a:hover{color:#0042fb !important;}
+.h-r li a{text-decoration: none}
+.h-r li a:hover{color:#0042fb !important;}
+.h-r img{width:20%}
+#hid1,#hid2,#hid3,#hid4,#hid5{
+    background: #e1e1e1;
+    position: absolute;
+    top:80px;
+    right:0px;
+    opacity:0;
+}
+#hid1 img{width: 130px}
+#hid2 img{width: 130px}
+#hid3 img{width: 130px}
+#hid4 img{width: 130px}
+#hid5 img{width: 130px}
+#hid1 ul{
+    float:right;
+    margin-right: 0px;
+}
+#hid2 ul{
+    float:right;
+    margin-right: 0px;
+}
+#hid3 ul{
+    float:right;
+    margin-right: 0px;
+}
+#hid4 ul{
+    float:right;
+    margin-right: 0px;
+}
+#hid5 ul{
+    float:right;
+    margin-right: 0px;
+}
+.one:hover #hid1{
+    opacity: 1;
+    z-index: 10;
+}
+.two:hover #hid2{
+    opacity: 1;
+    z-index: 10;
+}
+.san:hover #hid3{
+    opacity: 1;
+    z-index: 10;
+}
+.si:hover #hid4{
+   opacity: 1;
+    z-index: 10;
+}
+.wu:hover #hid5{
+    opacity: 1;
+    z-index: 10;
+}
+.si:hover .hd4{
+    transition: all 1s linear;
+    margin-right: 100px;
+}

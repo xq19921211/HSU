@@ -1,0 +1,985 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" xml:lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=renderer content=webkit>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="RV0busxZ1FqBrr3JfDVDFphCheslmdJjQ4Ehv2DK">
+
+    <title>极米科技官网 - 极米科技官方商城 - 极米无屏电视H2，更高亮更智能！</title>
+    <meta name="description"
+          content="极米科技是专注于无屏电视的高品质国货品牌，在中国甚至全球，更多人选择极米产品。极米新品有无屏电视H2、激光电视LUNE 4K等，激光电视是客厅电视升级换代之选。">
+    <meta name="Keywords"
+          content="极米,极米商城,xgimi,极米网上商城,极米无屏电视,智能微型投影仪,极米投影仪,家庭影院,极米H2,极米LUNE,极米H2 Slim,极米激光无屏电视A1,极米Z6,,极米官网,投影电视机,3D投影,家用投影,便携式投影电视">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="author" content="www.xgimi.com">
+
+    <link rel="shortcut icon" href="https://www.xgimi.com/favicon.ico?"/>
+    <link rel="icon" href="https://www.xgimi.com/favicon.ico?" type="image/x-icon"/>
+
+    <link href="css/bootstrap.min_1.css" rel="stylesheet">
+    <link href="css/new-base_1.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/iconfont_1.css">
+    <link href="css/jquery.msgbox_1.css" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="js/jquery.min_1.js"></script>
+    <script src="js/bootstrap.min_1.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min_1.js"></script>
+    <script src="js/respond.min_1.js"></script>
+    <![endif]-->
+
+    <script>
+        var APP_URL = 'https://www.xgimi.com';
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+    </script>
+
+        <link rel="stylesheet" href="css/swiper.min_1.css">
+    <link rel="stylesheet" type="text/css" href="css/shop_1.css">
+    <link rel="stylesheet" type="text/css" href="css/home_1.css">
+</head>
+<body>
+    <div class="nav-top-menu">
+    <div class="container">
+        <div class="nav-top-menu-bar">
+            <ul class="clearfix">
+                <li><a href="https://www.xgimi.com/gmui" class="">GMUI</a></li>
+                <li><a href="https://www.xgimi.com/aide.html" class="">无屏助手App</a></li>
+                <li><a href="https://www.xgimi.com/spreader.html" class="">极米推手</a></li>
+                <li><a href="https://www.xgimi.com/cooperation.html" class="">线下门店</a>
+                </li>
+                <li><a href="https://www.xgimi.com/use.html" class="">如何使用</a></li>
+                <li><a href="http://yb.xgimi.com/" target="_blank">影院式升级</a></li>
+                <li><a href="http://bbs.xgimi.cn/thread-116417-1-1.html" target="_blank">Lightank商务智能投影</a></li>
+                <li><a href="https://www.xgimi.com/en/">English</a></li>
+            </ul>
+        </div>
+
+        <div class="member_details clearfix">
+            <div class="member_info">
+                <ul class="cart-bar">
+                                            <li><a href="/login" title="">登 录</a></li>
+                        <li><a href="/register" title="">注 册</a></li>
+                                        <ul>
+                        <li class="cart" style="height: 40px;">
+                            <a href="https://shop.xgimi.com/cart.html" title="" onmouseout="cartHide();"
+                               onmouseover="cartShow();"><i class="icon iconfont icon-60shoppinghower"></i>购物车(<span
+                                        id="cartNumber"
+                                        style="color: #b0b0b0;font-size: 12px;">0</span>)</a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+            <div id="cartList" class="store-cart">
+                <div class="store-cart-empty">
+                    <p>
+                    <div class="spinner">
+                        
+                        <div class="rect3"></div>
+                        <div class="rect4"></div>
+                        <div class="rect5"></div>
+                    </div>
+                    
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="member_list opacity" id="info-list" onmouseout="hideMyInfo();" onmouseover="showMyInfo();">
+            <span class="triangle" id="triangle_info"></span>
+            <ul>
+                <li><a href="https://shop.xgimi.com/user.html" title="">个人中心</a></li>
+                <li><a href="https://account.xgimi.com/home" title="">账户管理</a></li>
+                <li><a href="/logout" class="logout">退出登录</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="nav-menu">
+    <div class="container">
+        <div class="nav-logo clearfix">
+            <a href="/index.html" title="极米官网">
+                <img src="picture/logo_1.png" alt="极米官网" style="width:100%;"/>
+            </a>
+        </div>
+
+        <div class="nav-menu-bar">
+            <ul>
+                <li><a href="https://www.xgimi.com/shop.html" class="active">在线商店</a></li>
+                <li onmouseover="showProductList(5);" onmouseout="hideProductList();"><a
+                            href="https://shop.xgimi.com/category/1-21"
+                            >激光电视</a></li>
+                <li onmouseover="showProductList(1);" onmouseout="hideProductList();"><a
+                            href="https://shop.xgimi.com/category/1-18"
+                            >家用娱乐</a></li>
+                <li onmouseover="showProductList(2);" onmouseout="hideProductList();"><a
+                            href="https://shop.xgimi.com/category/1-19"
+                            >便携娱乐</a></li>
+                <li onmouseover="showProductList(3);" onmouseout="hideProductList();"><a
+                            href="https://shop.xgimi.com/category/1-20"
+                            >儿童成长</a></li>
+                <li onmouseover="showProductList(4);" onmouseout="hideProductList();"><a
+                            href="https://shop.xgimi.com/category/2" >配件</a>
+                </li>
+                <li><a href="https://www.xgimi.com/service.html" >服务</a>
+                </li>
+                <li><a href="http://bbs.xgimi.cn" target="_blank">社区</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="nav-menu-main" id="product-list" onmouseover="showProductList(xx, true);" onmouseout="hideProductList();">
+    <div class="container">
+        <div class="nav-menu-list nav-menu-list1">
+            <ul>
+
+                <li><a href="https://www.xgimi.com/H2"><p><img
+                                    src="picture/h2_1.png"/></p>
+                        <p>H2</p></a></li>
+                <li><a href="https://www.xgimi.com/H2Slim"><p><img
+                                    src="picture/h2slim_1.png"/></p>
+                        <p>H2 Slim</p></a></li>
+                <li>
+                    <a href="/goods/118800357.html"><p><img src="picture/z6_1.png"
+                                                            style="width: 110px;margin-top: 5px;margin-bottom: 5px;"/>
+                        </p>
+                        <p>Z6</p></a></li>
+                <li><a href="https://www.xgimi.com/z4v"><p><img
+                                    src="picture/z4v_1.png"/></p>
+                        <p>Z4V</p></a></li>
+                
+                                    
+                        
+                
+                                    
+                        
+                
+                
+                                    
+                        
+                
+                <li>
+                    <a href="https://shop.xgimi.com/category/1-18"
+                       style="margin-top: 60px;display: inline-block;font-size: 16px">全部家用娱乐 ></a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-menu-list nav-menu-list2">
+            <ul>
+                <li><a href="https://www.xgimi.com/play"><p><img
+                                    src="picture/play_1.png"/></p>
+                        <p>Play</p></a></li>
+                <li><a href="https://www.xgimi.com/playx"><p><img
+                                    src="picture/playx_1.png"/></p>
+                        <p>Play X</p></a></li>
+                <li><a href="https://shop.xgimi.com/goods/323.html"><p><img
+                                    src="picture/heijincc_1.png"/></p>
+                        <p>CC极光黑金版</p></a></li>
+                <li><a href="https://www.xgimi.com/cc"><p><img style="position: relative; top: 6px;"
+                                                              src="picture/cc-logo_1.png"/>
+                        </p>
+                        <p>CC</p></a></li>
+                <li><a href="https://www.xgimi.com/NewZ4Air"><p><img
+                                    src="picture/newz4air_1.png"/></p>
+                        <p>New Z4Air</p></a></li>
+                <li><a href="https://shop.xgimi.com/goods/1183700448.html"><p><img
+                                    src="picture/newz4air_tongping_1.png"/></p>
+                        <p>New Z4Air同屏版</p></a></li>
+                
+                
+                <li>
+                    <a href="https://shop.xgimi.com/category/1-19"
+                       style="margin-top: 60px;display: inline-block;font-size: 16px">全部便携娱乐 ></a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-menu-list nav-menu-list3">
+            <ul>
+                <li><a href="https://www.xgimi.com/imea/"><p><img
+                                    src="picture/imea_biaozhun_1.png"/></p>
+                        <p>标准版</p></a></li>
+                <li><a href="https://www.xgimi.com/imea/early"><p><img
+                                    src="picture/imea_zaojiao_1.png"/></p>
+                        <p>早教版</p></a></li>
+                <li><a href="https://www.xgimi.com/imea/suit"><p><img
+                                    src="picture/imea_taozhuang_1.png"/>
+                        </p>
+                        <p>套装版</p></a></li>
+                <li><a href="https://shop.xgimi.com/goods/272.html"><p><img
+                                    src="picture/imea_feixia_1.png"/></p>
+                        <p>飞侠版</p></a></li>
+            </ul>
+        </div>
+        <div class="nav-menu-list nav-menu-list4">
+            <ul>
+                <li><a href="https://shop.xgimi.com/goods/129.html"><p><img
+                                    src="picture/mubu_1.png"/></p>
+                        <p>100英寸电动幕布</p></a></li>
+                <li><a href="https://shop.xgimi.com/goods/292.html"><p><img
+                                    src="picture/diaojia_1.png"/></p>
+                        <p>落地支架</p></a></li>
+                <li><a href="https://shop.xgimi.com/goods/334.html"><p><img
+                                    src="picture/mai2_1.png"/></p>
+                        <p>麦克风</p></a></li>
+                <li>
+                    <a href="https://shop.xgimi.com/category/2"
+                       style="margin-top: 60px;display: inline-block;font-size: 16px">全部配件 ></a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-menu-list nav-menu-list5">
+            <ul>
+                <li><a href="https://www.xgimi.com/lune4k"><p><img src="picture/w2nav_1.png">
+                        </p>
+                        <p>激光电视 皓·LUNE4K</p></a></li>
+                <li><a href="https://www.xgimi.com/lune"><p><img src="picture/w_1.png">
+                        </p>
+                        <p>激光电视 皓·LUNE</p></a></li>
+                <li><a href="https://www.xgimi.com/laser/t1"><p><img src="picture/t1_1.png">
+                        </p>
+                        <p>4K双色激光电视T1</p></a></li>
+                <li><a href="https://www.xgimi.com/laser/a1"><p><img src="picture/a1_1.png">
+                        </p>
+                        <p>激光电视A1</p></a></li>
+                <li>
+                    <a href="https://shop.xgimi.com/goods/252.html">
+                        <p><img src="picture/a1pro_1.png"></p>
+                        <p>激光电视A1Pro<br><span style="font-size: 12px;position: relative;top: -5px;">（软幕版）</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://shop.xgimi.com/goods/333.html ">
+                        <p><img src="picture/a1pro_1.png"></p>
+                        <p>激光电视A1Pro<br><span style="font-size: 12px;position: relative;top: -5px;">（硬幕版）</span></p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+            <div class="banner-con">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                                                                        <div class="swiper-slide" style="background-image: url(images/2018111217141897126_1.jpg)">
+                                <a href="https://shop.xgimi.com/goods/1184400469.html" target="_blank">
+
+                                </a>
+                            </div>
+                                                                                                <div class="swiper-slide" style="background-image: url(images/2018111218033490758_1.jpg)">
+                                <a href="https://www.xgimi.com/goods/1184400470.html" target="_blank">
+
+                                </a>
+                            </div>
+                                                                                                                                            <div class="swiper-slide" style="background-image: url(images/2018111022180835319_1.jpg)">
+                                <a href="https://shop.xgimi.com/goods/1182200398.html" target="_blank">
+
+                                </a>
+                            </div>
+                                                                                                <div class="swiper-slide" style="background-image: url(images/2018111218032246572_1.jpg)">
+                                <a href="https://www.xgimi.com/goods/1184400471.html" target="_blank">
+
+                                </a>
+                            </div>
+                                                                                                                                                                                                                                                                                        </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="container">
+    
+                    <div class="main-goods goods-item clearfix" id="main">
+                <h3>无屏电视<a href="https://shop.xgimi.com/category/1">查看全部</a></h3>
+                <ul>
+                                                                        <li>
+                                <a href="https://shop.xgimi.com/goods/1182200401.html">
+                                    <p>
+                                                                                    <img src="picture/2018111218290190521_1.jpg"/>
+                                                                            </p>
+                                    <p>
+                                        <span class="name">极米无屏电视Z6X</span>
+                                    </p>
+                                    <p class="brief">
+                                        <span>耀黑之作 智成光芒</span>
+                                    </p>
+                                    <p class="price">
+                                        2999
+                                        <font>元</font>
+                                    </p>
+                                    <p class="tag">
+                                                                                                                                    <em style="background-color:#FFAC13;">立减</em>
+                                                                                                                        </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/1181700392.html">
+                                    <p>
+                                                                                    <img src="picture/2018111218270881773_1.jpg"/>
+                                                                            </p>
+                                    <p>
+                                        <span class="name">极米无屏电视H2</span>
+                                    </p>
+                                    <p class="brief">
+                                        <span>更亮更智能新旗舰</span>
+                                    </p>
+                                    <p class="price">
+                                        3999
+                                        <font>元</font>
+                                    </p>
+                                    <p class="tag">
+                                                                                                                                    <em style="background-color:#FFAC13;">立减</em>
+                                                                                                                        </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/1184400469.html">
+                                    <p>
+                                                                                    <img src="picture/2018111218272669899_1.jpg"/>
+                                                                            </p>
+                                    <p>
+                                        <span class="name">极米无屏电视Z4V</span>
+                                    </p>
+                                    <p class="brief">
+                                        <span>轻装上阵 重塑经典</span>
+                                    </p>
+                                    <p class="price">
+                                        2299
+                                        <font>元</font>
+                                    </p>
+                                    <p class="tag">
+                                                                                                                                    <em style="background-color:#83C44E;">新品</em>
+                                                                                                                        </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/1184400471.html">
+                                    <p>
+                                                                                    <img src="picture/2018111218294215193_1.jpg"/>
+                                                                            </p>
+                                    <p>
+                                        <span class="name">极米无屏电视Play</span>
+                                    </p>
+                                    <p class="brief">
+                                        <span>随时随地 玩出新意</span>
+                                    </p>
+                                    <p class="price">
+                                        2499
+                                        <font>元</font>
+                                    </p>
+                                    <p class="tag">
+                                                                                                                                    <em style="background-color:#83C44E;">新品</em>
+                                                                                                                        </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/1184400470.html">
+                                    <p>
+                                                                                    <img src="picture/2018111218300885512_1.png"/>
+                                                                            </p>
+                                    <p>
+                                        <span class="name">极米无屏电视Play X</span>
+                                    </p>
+                                    <p class="brief">
+                                        <span>次世代跨界智能投影</span>
+                                    </p>
+                                    <p class="price">
+                                        4999
+                                        <font>元</font>
+                                    </p>
+                                    <p class="tag">
+                                                                                                                                    <em style="background-color:#83C44E;">新品</em>
+                                                                                                                        </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/224.html">
+                                    <p>
+                                                                                    <img src="picture/2018111218304481968_1.jpg"/>
+                                                                            </p>
+                                    <p>
+                                        <span class="name">极米无屏电视CC</span>
+                                    </p>
+                                    <p class="brief">
+                                        <span>电影音乐拎着走</span>
+                                    </p>
+                                    <p class="price">
+                                        2699
+                                        <font>元</font>
+                                    </p>
+                                    <p class="tag">
+                                                                                                                                    <em style="background-color:#FFAC13;">立减</em>
+                                                                                                                        </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/1174800338.html">
+                                    <p>
+                                                                                    <img src="picture/2018111218292449531_1.jpg"/>
+                                                                            </p>
+                                    <p>
+                                        <span class="name">极米无屏电视New Z4Air</span>
+                                    </p>
+                                    <p class="brief">
+                                        <span>娱乐随心 商务随身</span>
+                                    </p>
+                                    <p class="price">
+                                        2499
+                                        <font>元</font>
+                                    </p>
+                                    <p class="tag">
+                                                                            </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/1182200398.html">
+                                    <p>
+                                                                                    <img src="picture/2018111218274071528_1.jpg"/>
+                                                                            </p>
+                                    <p>
+                                        <span class="name">极米无屏电视H2极光</span>
+                                    </p>
+                                    <p class="brief">
+                                        <span>1500ANSI流明 1080P分辨率</span>
+                                    </p>
+                                    <p class="price">
+                                        5999
+                                        <font>元</font>
+                                    </p>
+                                    <p class="tag">
+                                                                            </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/1181900393.html">
+                                    <p>
+                                                                                    <img src="picture/2018111218284280624_1.jpg"/>
+                                                                            </p>
+                                    <p>
+                                        <span class="name">极米无屏电视H2 Slim</span>
+                                    </p>
+                                    <p class="brief">
+                                        <span>大屏生活 智享新视界</span>
+                                    </p>
+                                    <p class="price">
+                                        3599
+                                        <font>元</font>
+                                    </p>
+                                    <p class="tag">
+                                                                                                                                    <em style="background-color:#FFAC13;">立减</em>
+                                                                                            <em style="background-color:#EC615E;">下单赠</em>
+                                                                                                                        </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/118800357.html">
+                                    <p>
+                                                                                    <img src="picture/2018111218295992110_1.jpg"/>
+                                                                            </p>
+                                    <p>
+                                        <span class="name">极米无屏电视Z6</span>
+                                    </p>
+                                    <p class="brief">
+                                        <span>AI电影 出色不止全高清</span>
+                                    </p>
+                                    <p class="price">
+                                        2799
+                                        <font>元</font>
+                                    </p>
+                                    <p class="tag">
+                                                                                                                                    <em style="background-color:#FFAC13;">立减</em>
+                                                                                                                        </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/240.html">
+                                    <p>
+                                                                                    <img src="picture/2018111218302925982_1.jpg"/>
+                                                                            </p>
+                                    <p>
+                                        <span class="name">极米无屏电视CC极光</span>
+                                    </p>
+                                    <p class="brief">
+                                        <span>侧投也能看 快速自动对焦</span>
+                                    </p>
+                                    <p class="price">
+                                        3499
+                                        <font>元</font>
+                                    </p>
+                                    <p class="tag">
+                                                                            </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/1184200464.html">
+                                    <p>
+                                                                                    <img src="picture/2018111618072498184_1.jpg"/>
+                                                                            </p>
+                                    <p>
+                                        <span class="name">极米无屏电视N20</span>
+                                    </p>
+                                    <p class="brief">
+                                        <span>寓繁于简 慧汇于芯</span>
+                                    </p>
+                                    <p class="price">
+                                        5699
+                                        <font>元</font>
+                                    </p>
+                                    <p class="tag">
+                                                                                                                                    <em style="background-color:#83C44E;">新品</em>
+                                                                                                                        </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/261.html">
+                                    <p>
+                                                                                    <img src="picture/2018111218314796145_1.jpg"/>
+                                                                            </p>
+                                    <p>
+                                        <span class="name">imea儿童智能投影</span>
+                                    </p>
+                                    <p class="brief">
+                                        <span>让孩子看得更健康</span>
+                                    </p>
+                                    <p class="price">
+                                        1499
+                                        <font>元</font>
+                                    </p>
+                                    <p class="tag">
+                                                                                                                                    <em style="background-color:#FFAC13;">立减</em>
+                                                                                                                        </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/1183800450.html">
+                                    <p>
+                                                                                    <img src="picture/2018111218313652068_1.jpg"/>
+                                                                            </p>
+                                    <p>
+                                        <span class="name">激光电视 皓·LUNE 4K</span>
+                                    </p>
+                                    <p class="brief">
+                                        <span>万元级超百吋4K激光电视</span>
+                                    </p>
+                                    <p class="price">
+                                        14999
+                                        <font>元</font>
+                                    </p>
+                                    <p class="tag">
+                                                                                                                                    <em style="background-color:#83C44E;">新品</em>
+                                                                                                                        </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/323.html">
+                                    <p>
+                                                                                    <img src="picture/2018111218301849815_1.jpg"/>
+                                                                            </p>
+                                    <p>
+                                        <span class="name">极米无屏电视CC极光黑金版</span>
+                                    </p>
+                                    <p class="brief">
+                                        <span>长时续航/JBL音响/侧投也能看/快速自动对焦/一体收纳包</span>
+                                    </p>
+                                    <p class="price">
+                                        3699
+                                        <font>元</font>
+                                    </p>
+                                    <p class="tag">
+                                                                            </p>
+                                </a>
+                            </li>
+                                                            </ul>
+            </div>
+        
+        
+                    <div class="pj-goods goods-item clearfix" id="parts">
+                <h3>推荐配件</h3>
+                <ul>
+                                                                        <li>
+                                <a href="https://shop.xgimi.com/goods/334.html">
+                                    <p>
+                                                                                    <img src="picture/2017112817365371763_1.jpg"/>
+                                                                            </p>
+                                    <p class="pname">极米K歌无线麦克风C2</p>
+                                    <p class="price">
+                                        <b>569
+                                            <font>元</font></b></p>
+                                    <p class="tag">
+                                                                            </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/84.html">
+                                    <p>
+                                                                                    <img src="picture/12_g_1487289488199_1.jpg"/>
+                                                                            </p>
+                                    <p class="pname">极米3D眼镜G102L</p>
+                                    <p class="price">
+                                        <b>198
+                                            <font>元</font></b></p>
+                                    <p class="tag">
+                                                                            </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/251.html">
+                                    <p>
+                                                                                    <img src="picture/68_g_1489606707327_1.jpg"/>
+                                                                            </p>
+                                    <p class="pname">极米无线游戏手柄</p>
+                                    <p class="price">
+                                        <b>199
+                                            <font>元</font></b></p>
+                                    <p class="tag">
+                                                                            </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/1183400426.html">
+                                    <p>
+                                                                                    <img src="picture/2018082209261075918_1.jpg"/>
+                                                                            </p>
+                                    <p class="pname">极米100英寸16:10电动幕布(P138S)</p>
+                                    <p class="price">
+                                        <b>499
+                                            <font>元</font></b></p>
+                                    <p class="tag">
+                                                                                                                                    <em style="background-color:#83C44E;">新品</em>
+                                                                                                                        </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/1183400427.html">
+                                    <p>
+                                                                                    <img src="picture/2018082209360445973_1.jpg"/>
+                                                                            </p>
+                                    <p class="pname">极米100英寸4:3电动幕布(P139S)</p>
+                                    <p class="price">
+                                        <b>299
+                                            <font>元</font></b></p>
+                                    <p class="tag">
+                                                                                                                                    <em style="background-color:#83C44E;">新品</em>
+                                                                                                                        </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/1183000417.html">
+                                    <p>
+                                                                                    <img src="picture/2018082910035342151_1.jpg"/>
+                                                                            </p>
+                                    <p class="pname">极米便携式地拉幕布</p>
+                                    <p class="price">
+                                        <b>699
+                                            <font>元</font></b></p>
+                                    <p class="tag">
+                                                                                                                                    <em style="background-color:#83C44E;">新品</em>
+                                                                                                                        </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/1183000418.html">
+                                    <p>
+                                                                                    <img src="picture/2018082909535149519_1.jpg"/>
+                                                                            </p>
+                                    <p class="pname">极米100英寸地拉幕布</p>
+                                    <p class="price">
+                                        <b>1099
+                                            <font>元</font></b></p>
+                                    <p class="tag">
+                                                                                                                                    <em style="background-color:#83C44E;">新品</em>
+                                                                                                                        </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/300.html">
+                                    <p>
+                                                                                    <img src="picture/96_g_1504294392801_1.jpg"/>
+                                                                            </p>
+                                    <p class="pname">极米100英寸激光抗光软幕</p>
+                                    <p class="price">
+                                        <b>5999
+                                            <font>元</font></b></p>
+                                    <p class="tag">
+                                                                            </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/141.html">
+                                    <p>
+                                                                                    <img src="picture/27_g_1460339485436_1.jpg"/>
+                                                                            </p>
+                                    <p class="pname">极米120英寸16：10遥控幕布</p>
+                                    <p class="price">
+                                        <b>899
+                                            <font>元</font></b></p>
+                                    <p class="tag">
+                                                                            </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/331.html">
+                                    <p>
+                                                                                    <img src="picture/2018050416361217977_1.jpg"/>
+                                                                            </p>
+                                    <p class="pname">极米100英寸超短焦菲涅尔抗光硬幕</p>
+                                    <p class="price">
+                                        <b>6999
+                                            <font>元</font></b></p>
+                                    <p class="tag">
+                                                                            </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/1183000416.html">
+                                    <p>
+                                                                                    <img src="picture/2018072709584113201_1.jpg"/>
+                                                                            </p>
+                                    <p class="pname">极米吊顶支架（C225B）</p>
+                                    <p class="price">
+                                        <b>79
+                                            <font>元</font></b></p>
+                                    <p class="tag">
+                                                                                                                                    <em style="background-color:#83C44E;">新品</em>
+                                                                                                                        </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/292.html">
+                                    <p>
+                                                                                    <img src="picture/86_g_1500430152800_1.jpg"/>
+                                                                            </p>
+                                    <p class="pname">X-Floor 落地支架（F062S）</p>
+                                    <p class="price">
+                                        <b>499
+                                            <font>元</font></b></p>
+                                    <p class="tag">
+                                                                            </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/269.html">
+                                    <p>
+                                                                                    <img src="picture/75_g_1498427262022_1.jpg"/>
+                                                                            </p>
+                                    <p class="pname">极米X-Roof吊顶支架</p>
+                                    <p class="price">
+                                        <b>199
+                                            <font>元</font></b></p>
+                                    <p class="tag">
+                                                                            </p>
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://shop.xgimi.com/goods/206.html">
+                                    <p>
+                                                                                    <img src="picture/50_g_1468865696256_1.jpg"/>
+                                                                            </p>
+                                    <p class="pname">X-Wall壁挂支架</p>
+                                    <p class="price">
+                                        <b>129
+                                            <font>元</font></b></p>
+                                    <p class="tag">
+                                                                            </p>
+                                </a>
+                            </li>
+                                                                <li class="more">
+                        <a href="/category/2">
+                            <p><img src="picture/more_peijian_1.png"/></p>
+                            <p>浏览更多</p>
+                            <p>幕布、支架、眼镜、其他</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+                <div class="nav-video clearfix" style="margin-bottom: 50px;">
+            <h3 style="font-size: 17px;padding-bottom: 10px;">视频<a href="/video.html">查看更多</a></h3>
+            <ul>
+                <li id="video5">
+                    <p>H2 更亮更智能新旗舰</p>
+                    <img src="picture/video_1.png" class="play_icon">
+                </li>
+                <li id="video3">
+                    <p>H2 Slim 大屏生活 智享新视界</p>
+                    <img src="picture/video_1.png" class="play_icon">
+                </li>
+                <li id="video1">
+                    <p>皓·LUNE 重新定义万元级激光电视</p>
+                    <img src="picture/video_1.png" class="play_icon">
+                </li>
+                <li id="video2">
+                    <p>百度DUEROS 更懂你的人工智能语音</p>
+                    <img src="picture/video_1.png" class="play_icon">
+                </li>
+            </ul>
+        </div>
+        <div class="nav-video clearfix" style="margin-bottom: 50px;">
+            <h3 style="font-size: 17px;padding-bottom: 10px;">重磅奖项</h3>
+            <img src="picture/prize_1.jpg" class="">
+        </div>
+    </div>
+
+    <div id="top" class="scrollTop"></div>
+    <div class="online-note" style="display: block;">
+                    <a class="onBtn" id="BizQQWPAC" onclick="openXiaoDuo();"><img src="picture/cs_1.png">在线客服</a>
+            </div>
+
+    <style>
+    p {
+    margin: 0 0 10px;
+}
+</style>
+<footer class="common-footer">
+
+    <div class="container">
+        <div class="row-fluid nav-fuwu-list">
+            <div class="span3"><p><a href="https://www.xgimi.com/aftersales.html#baoyou" class="f1">满59元包邮(幕布除外)</a></p></div>
+            <div class="span3"><p><a href="https://www.xgimi.com/aftersales.html#sevenday" class="f2">7天无理由退货保障</a></p></div>
+            <div class="span3"><p><a href="https://www.xgimi.com/aftersales.html#changeproduct" class="f3">30天换货承诺</a></p></div>
+            <div class="span3"><p><a href="https://www.xgimi.com/aftersales.html#sevenonefour" class="f4">7X14小时在线服务</a></p></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="line"></div>
+    </div>
+
+    <style type="text/css">
+        .row-fluid .s4{width: 17%;}
+    </style>
+    <div class="container">
+        <div class="row-fluid nav-footer">
+            <div class="span3 s4">
+                <p class="ti">关于极米</p>
+                <p><a href="https://www.xgimi.com/about.html">公司简介</a></p>
+                <p><a href="https://www.xgimi.com/contact.html">联系我们</a></p>
+                <p><a href="https://www.xgimi.com/hr.html">加入我们</a></p>
+            </div>
+            <div class="span3 s4">
+                <p class="ti">服务支持</p>
+                <p><a href="https://www.xgimi.com/question-pay.html">常见问题</a></p>
+                <p><a href="https://www.xgimi.com/host_list.html">固件下载</a></p>
+                <p><a href="https://www.xgimi.com/aftersales.html">售后服务</a></p>
+            </div>
+            <div class="span3 s4">
+                <p class="ti">关注我们</p>
+                <p><a href="http://weibo.com/u/3911924349" target="_blank">新浪微博</a></p>
+                <p><a href="javascript:;" onmouseover="$('.wx').show();" onmouseout="$('.wx').hide();" style="position: relative;">官方微信<b class="wx"><img src="picture/2018041013470381106_1.png" width="120" height="120" alt="极米微信"/><em></em></b></a></p>
+                <p><a href="http://bbs.xgimi.com" target="_blank">极米社区</a></p>
+            </div>
+            <div class="span3 s4">
+                <p class="ti">特色服务</p>
+                <p><a href="https://shop.xgimi.com/gcode.html">G卡通道</a></p>
+                <p><a href="https://shop.xgimi.com/balance_pay.html">价格保护</a></p>
+                <p><a href="https://www.xgimi.com/cycle.html">以旧换新</a></p>
+            </div>
+            <div class="span3">
+                <p class="ti-tel">400-0028-960</p>
+                <p class="ti-time">每日9:00-23:00（仅收取市话费）</p>
+                                <p class="ti-online"><a onclick="openXiaoDuo()" id="BizQQWPAS" class="onlineBtn"><img src="picture/online_1.png"/></a></p></div>
+                        </div>
+    </div>
+    <div class="container nav-footer-bottom">
+        <a href="https://www.xgimi.com/index.html" class="span"></a>
+        <p>
+            <a href="http://xgimi.jd.com/" target="_blank">极米京东自营店</a>
+            <a href="http://jimikeji.tmall.com" target="_blank">极米天猫旗舰店</a>
+            <a href="https://shop68342927.taobao.com" target="_blank">极米淘宝直营店</a>
+            <a href="http://pinpai.gome.com.cn/preview/SI_247/PI_V12616.html" target="_blank">极米国美旗舰店</a>
+            <a href="http://shop.suning.com/30000643/index.html" target="_blank">极米苏宁旗舰店</a>
+            <!-- <a href="http://xgimi.yhd.com/" target="_blank">极米1号店旗舰店</a> -->
+            <a href="https://www.xgimi.com/join.html">渠道加盟</a>
+            <a href="http://yb.xgimi.com/" target="_blank">青柠影咖</a>
+            <a href="http://bbs.xgimi.cn/thread-116417-1-1.html" target="_blank">Lightank商务智能投影</a>
+            <a href="https://www.popomedia.cn/" target="_blank">泡泡传媒</a>
+            <a href="https://www.xgimi.com/en" target="_blank">English</a>
+        </p>
+        <p>
+            ©2018 XGIMI. All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">蜀ICP备12003417号-1</a>
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51019002000758" target="_blank" class="t-p">川公网安备 51019002000758号</a>
+            <a href="https://tsm.miit.gov.cn/pages/home.aspx" target="_blank" class="t-p" style="margin-left: 8px">增值电信业务经营许可证：川B2-20180333</a>
+            <a id='___szfw_logo___' href='https://credit.szfw.org/CX20170228033260100165.html' target='_blank' class="chengxin f"></a>
+
+            <a href='http://sc.gsxt.gov.cn/index.html' class="gongshang f" target="_blank"></a>
+        </p>
+        <div class="text-center"><img src="picture/slogan_1.png" alt=""></div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="js/common_1.js"></script>
+<script src="js/header_1.js"></script>
+<script type="text/javascript" src="js/jquery.msgbox_1.js"></script>
+    <script src="js/swiper.min_1.js"></script>
+    <script src="js/lefttime.min_1.js"></script>
+    <script src="js/tinybox.min_1.js"></script>
+    <script src="js/video_1.js"></script>
+    <script src="js/home_1.js"></script>
+
+
+<div style="display: none;">
+    
+    <script>
+        var cnzz_s_tag = document.createElement('script');
+        cnzz_s_tag.type = 'text/javascript';
+        cnzz_s_tag.async = true;
+        cnzz_s_tag.charset = 'utf-8';
+        cnzz_s_tag.src = 'https://v1.cnzz.com/z_stat.php?id=1000374666&web_id=1000374666 &async=1';
+        var root_s = document.getElementsByTagName('script')[0];
+        root_s.parentNode.insertBefore(cnzz_s_tag, root_s);
+    </script>
+    <script type="text/javascript" src="js/baidutongji_1.js"></script>
+    <script type="text/javascript">
+        var _mvq = _mvq || [];
+        _mvq.push(['$setAccount', 'm-168119-0']);
+
+        _mvq.push(['$logConversion']);
+        (function () {
+            var mvl = document.createElement('script');
+            mvl.setAttribute('type', 'text/javascript');
+            mvl.async = true;
+            mvl.src = ('https:' == document.location.protocol ? 'https://static-ssl.mediav.com/mvl.js' : 'http://static.mediav.com/mvl.js');
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(mvl, s);
+        })();
+    </script>
+    
+    <script>
+        !(function (c, b, d, a) {
+            c[a] || (c[a] = {});
+            c[a].config = {pid: 'bdidt76ehx@41287c6dc93d67a'};
+            with (b) with (body) with (insertBefore(createElement('script'), firstChild)) setAttribute('crossorigin', '', src = d);
+        })(window, document, 'https://retcode.alicdn.com/retcode/bl.js', '__bl');
+    </script>
+</div>
+
+
+
+    
+    <script type="text/javascript"
+            src="js/sdk.min_1.js"
+            defer async></script>
+    <script>
+        function openXiaoDuo() {
+            if(window.CVD_SDK) window.CVD_SDK.openWindow()
+        }
+    </script>
+
+</body>
+</html>

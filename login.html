@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="myss/bootstrap.css"/>
+    <script src="myss/jquery.min.js"></script>
+    <script src="myss/popper.min.js"></script>
+    <script src="myss/bootstrap.min.js"></script>
+    <script src="myss/jquery-1.11.3.js"></script>
+    <script src="myss/login.js"></script>
+    <style>
+      .login-bg{background: #e1e1e1}
+     .ll img {width: 96px}
+     .login{width: 840px;height: 510px}
+     .icon img{
+         width: 34px;
+         height: 34px;
+         margin:10px
+     }
+      .show{
+          font-size:15px;
+          color:#77be22;
+          font-weight: bold;
+      }
+      .hide{
+          visibility: hidden;
+      }
+    </style>
+</head>
+<body class="login-bg">
+<div class="w-100 bg-white pt-3 pb-3">
+    <div class="container d-flex justify-content-around">
+        <div class="ll">
+            <ul class="list-unstyled d-flex m-0">
+                <li class="mr-5">
+                    <img src="picture/logo.png" alt=""/>
+                </li>
+                <li class="mr-5">
+                    <a href="" class="text-muted">商城</a>
+                </li>
+                <li class="mr-5">
+                    <a href="" class="text-muted">论坛</a>
+                </li>
+                <li class="mr-5">
+                    <a href="" class="text-muted">服务</a>
+                </li>
+            </ul>
+        </div>
+        <div class="">
+            <a href="" class="m-0 text-muted">关于极米</a>
+        </div>
+    </div>
+</div>
+<div class="w-100 mt-3">
+<div class="container login bg-white text-center pt-5">
+    <h5 class="">
+        极米账户登录
+    </h5>
+    <input type="text" class="w-50 p-2 mt-4 small uname" placeholder="邮箱/手机号/用户名"/>
+    <br/>
+    <span class='tst hide'>请输入6-12位数字字母</span>
+    <br/>
+    <input type="password" class="w-50 p-2 mt-2 small upwd" placeholder="登录密码"/>
+    <br/>
+    <span class='tst hide'>密码为6-12位数字字母</span>
+    <br/>
+    <button class="p-2 w-50 bg-primary text-white mt-2 reg">
+        立即登录
+    </button>
+    <p class="mt-2">
+        <span class="mr-5">
+            <a href="" class="text-muted small">手机短信登录</a>/
+            <a href="" class="text-muted small">注册</a>
+        </span>
+        <span class="ml-5">
+            <a href="reg.html" class="small text-muted">注册账号</a>|
+            <a href="" class="small text-muted">忘记密码</a>
+        </span>
+    </p>
+    <div class="mt-5">
+        <span class="text-dark small">其他方式登录</span>
+        <hr class="w-50"/>
+        <div class="icon">
+            <img src="picture/qq.png" alt="" class=""/>
+            <img src="picture/wb.png" alt="" class=""/>
+            <img src="picture/wx.png" alt="" class=""/>
+        </div>
+    </div>
+</div>
+</div>
+<p class="small mt-5 text-center">©xgimi.com 蜀ICP备12003417号</p>
+</body>
+</html>
